@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Bloom&Co.</title>
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml" sizes="any">
+
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/about.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <title>About Plants</title>
+    <style>
+.header *{
+    color: black;
+}
+.header{
+    box-shadow: 0 7.8px 11px hsla(114, 24%, 69%, 0.15);
+}
+    </style>
+</head>
+
+<body>
+    <header class="header" data_hdr>
+        <div class="container">
+
+            <!-- Only Available when the screen size is smaller ya-->
+            <button class="nav_minimize" data_minimize>
+                <i class="fa fa-bars" id="threeLines" name="menu-outline"></i>
+                <i class="fa fa-times" id="tutup" name="close-outline"></i>
+            </button>
+            <a href="index.html" class="logo"><img src="assets/images/logo-ver2.svg" width="150px"></a>
+            <!------------------------------------------------------->
+
+            <nav class="NavigationBar" data_nav_bar>
+                <ul class="NavigationBar_List">
+                    <li><a href="index.html" class="navbar_href" data_nav_href>Home</a></li>
+                    <li><a href="shop.html" class="navbar_href" data_nav_href>Shop</a></li>
+                    <li><a href="about.html" class="navbar_href" data_nav_href>About</a></li>
+                    <li><a href="contact_us.html" class="navbar_href" data_nav_href>Contact</a></li>
+                </ul>
+
+                <a href="login.html" class="nav_login">LOG IN</a>
+            </nav>
+
+            <div class="rightHeader">
+              <div style="position: relative; display: inline-block;">
+                <form method="GET">
+                  <input type="search" placeholder="Search Products..." id="search" style="padding: 8px; width: 150px; border: 1px solid #ccc; border-radius: 8px;">
+                    <button style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%);" onclick="search()">
+                      <i class="fa fa-search" style="font-size:16px; color: #3a4e1d;" aria-hidden="true"></i>
+                    </button>
+                </form>
+              </div>
+            
+                <button class="headerButton user">
+                    <a href="login.html">
+                        <i class="fa fa-user" style="font-size:20px"></i>
+                    </a>
+                </button>
+
+                <button class="headerButton">
+                  <a href="shopping_cart.html">
+                    <i class="fa fa-shopping-cart" style="font-size:20px"></i>
+                  </a>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div>
+        <div class="about_title">
+            <h1>About</h1>
+        </div>
+    </div>
+    <div class = "about_main">
+        <div>
+            <h2>Our Mission</h2>
+            <p>We have a strong desire to emphasize the value plants have in our life. Our goal is to make people aware of the benefits of adding more greenery to their surroundings in order to live happier and healthier lives.</p>
+        </div>
+
+        <div>
+            <h2>Why Plants Matter</h2>
+            <p>In addition to adding aesthetic value, plants can help with stress reduction, enhanced productivity, and better air quality. Discover the many plant species and their unique advantages.</p>
+        </div>
+
+        <div>
+            <h2>Plant Care Instructions</h2>
+            <h3 style="font-weight: bold;">Take the necessary steps to ensure the effective growth of your plants. Pay attention to these general directions for care: </h3>
+            <ul>
+                <li>Water your plants on a regular basis, but be sure not to overwater them.</li>
+                <li>Place the plants in areas that have light conditions that are appropriate for the species they belong to.</li>
+                <li>Ensure that there is sufficient ventilation in order to avoid infections and pests.</li>
+                <li>Use fertilizer in accordance with the unique requirements of your plants.</li>
+                <li>For best development, your plants should be inspected and pruned on a regular basis.</li>
+            </ul>
+
+            <div class="picture_la">
+            <img src="assets/images/about_watering.jpg" alt="Watering Plants">
+            <img src="assets/images/about_fertilize.jpg" alt="Fertilize Plants">
+            <img src="assets/images/about_care.jpg" alt="Care Plants">
+            </div>
+
+        </div>
+
+        <div>
+            <h2>Meet the Team</h2>
+            <p>We are a committed group of people that have a passion for plants and a love for the natural world in common. Get to know the people that are the driving force behind our community of people who are passionate about plants, and come along with us on this journey toward a more environmentally friendly future!</p>
+        </div>
+    </div>
+
+    <footer style="background-image: url('./assets/images/footer.gif')">
+        <div class="footer_box section">
+            <div class="container">
+                <div>
+                    <a href="#" class="logo">Bloom&Co.</a>
+                    <p class="footer-text" style="margin-block-end: 22px; color: rgba(71, 66, 66, 0.856);;">If you have any enquiry, please find us at <a href="mailto:support@bloom.com" style="color: slateblue; font-weight: bold;">support@bloom.com</a></p>
+                    <ul>
+                        <li class="contact">
+                            <i class="fa fa-map-marker" style="font-size:26px; color: #505e3c;"></i>
+                            <address style="color: rgba(71, 66, 66, 0.856);">
+                                1, Jalan Puteri 1/1 Bandar Puteri 47100 Puchong Selangor.
+                            </address>
+                        </li>
+
+                        <li class="contact">
+                            <i class="fa fa-phone" style="font-size:26px; color: #505e3c;"></i>
+
+                            <a href="tel:+6010010100" style="color: rgba(71, 66, 66, 0.856);">(+60)-10 010 0100</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul>
+                    <li><p class="footer_title">About</p></li>
+                    <li style="text-align: justify; color: #193b44;">
+                        Founded in 2023,
+                        Bloom&Co. takes pride in curating the finest blooms
+                        and greenery worldwide. <b>"Where every leaf tells a story, 
+                        and every plant inspires a moment of natural beauty."</b>
+                    </li>
+                </ul>
+
+                <ul style="color: #3b4232;">
+                    <li><p class="footer_title">Menu</p></li>
+                    <li><a href="contact_us.html" class="footer_href">Contact Us</a></li>
+                    <li><a href="login.html" class="footer_href">Login</a></li>
+                    <li><a href="register.html" class="footer_href">Register</a></li>
+                    <li><a href="about.html" class="footer_href">About</a></li>
+                    <li><a href="shop.html" class="footer_href">Shop</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div style="padding-block: 2px;">
+            <div class="container">
+                <p style="text-align: center;">&copy; 2023 Bloom&Co.  <i><sub style="color: rgb(36, 158, 189);">by RayXiang</sub></i></p>
+                <p class="dates">Version: 20231201B | Created on: 20 November 2023 | Last Updated on: 10 December 2023 | Data Collection Date: 30 November 2023</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script src="./assets/javascripts/navigation.js" defer></script>

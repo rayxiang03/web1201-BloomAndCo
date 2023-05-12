@@ -1,0 +1,132 @@
+#pid {
+    color: cadetblue;
+    font-size: small;
+}
+
+.notification {
+    background-color: #eca8ab;
+    color: white;
+    padding: 10 px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: small;
+}
+
+.hidden {
+    display: none;
+}
+
+.delete-button {
+    color: gray;
+    border: none;
+    padding: 2px 8px;
+    font-size: 13px;
+}
+
+.delete-button:hover {
+    background-color: rgb(182, 182, 182);
+    color: white;
+    border: none;
+    padding: 2px 8px;
+    border-radius: 20px;
+}
+
+.main-container {
+    width: 80%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 120px;
+    margin-bottom: 30px;
+    min-height: 360px;
+}
+
+.left-container {
+    flex: 4;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.right-container {
+    background-color: rgba(236, 236, 236, 0.808);
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    border-bottom: 1px solid gainsboro;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.order-total,
+.total-items {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+}
+
+.checkout-button {
+    padding: 10px 40px;
+    background-color: #acbe92;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.checkout-button:hover {
+    background-color: #838f72;
+}
+
+/* ViewPort */
+@media (max-width: 868px) {
+    .main-container {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .left-container {
+        border-right: none;
+        max-height: none;
+        overflow-y: visible;
+    }
+
+    .shoppingcarttitle {
+        margin-left: 10px !important;
+    }
+
+    .right-container {
+        margin: 20px 0;
+    }
+
+    .cust_cart img {
+        width: 80px;
+    }
+}

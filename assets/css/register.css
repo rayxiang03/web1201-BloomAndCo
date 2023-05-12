@@ -1,0 +1,94 @@
+.reg_container {
+    display: flex;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    margin-left: 250px;
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+
+.reg_column {
+    flex: 1;
+    padding: 20px;
+    width: 400px;
+}
+
+.reg_column h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.reg_column label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.reg_column input,
+.reg_column textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.radio-group {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.radio-group label {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.radio-group input {
+    margin-right: 5px;
+}
+
+.form-row button {
+    background-color: #505e3c;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.invalid-field {
+    background-color: #ffdddd93;
+}
+
+#mandatory::after {
+    content: "*";
+    color: red;
+    margin-left: 3px;
+}
+
+/* ViewPort */
+@media (max-width: 990px) {
+    .reg_container {
+        max-width: 600px;
+        margin-left: 60px;
+        margin-bottom: 60px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .reg_container {
+        flex-direction: column;
+        max-width: 400px;
+        margin-left: 50px;
+        margin-bottom: 60px;
+    }
+
+}

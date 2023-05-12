@@ -1,0 +1,55 @@
+.logout{
+    background-color: #505e3cba;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    float: right;
+}
+
+.profile{
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 120px;
+}
+
+.profile_title{
+    background-color: #ccd6be;
+    color: #fff;
+    padding: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.profile_table{
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #505e3c;
+    color: #fff;
+}
+
+.profile_table strong {
+    margin-right: 8px;
+    color: #505e3c;
+}

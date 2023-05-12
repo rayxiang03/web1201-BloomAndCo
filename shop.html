@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bloom&Co.</title>
+        <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml" sizes="any">
+
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/shop.css" rel="stylesheet" type="text/css" />
+
+        <!-- Font Awesome ONLY -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <style>
+            .header *{
+                color: black;
+            }
+            .header{
+                box-shadow: 0 7.8px 11px hsla(114, 24%, 69%, 0.15);
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="header" data_hdr>
+            <div class="container">
+    
+                <!-- Only Available when the screen size is smaller ya-->
+                <button class="nav_minimize" data_minimize>
+                    <i class="fa fa-bars" id="threeLines" name="menu-outline"></i>
+                    <i class="fa fa-times" id="tutup" name="close-outline"></i>
+                </button>
+                <a href="index.html" class="logo"><img src="assets/images/logo-ver2.svg" width="150px"></a>
+                <!------------------------------------------------------->
+    
+                <nav class="NavigationBar" data_nav_bar>
+                    <ul class="NavigationBar_List">
+                        <li><a href="index.html" class="navbar_href" data_nav_href>Home</a></li>
+                        <li><a href="shop.html" class="navbar_href" data_nav_href>Shop</a></li>
+                        <li><a href="about.html" class="navbar_href" data_nav_href>About</a></li>
+                        <li><a href="contact_us.html" class="navbar_href" data_nav_href>Contact</a></li>
+                    </ul>
+    
+                    <a href="login.html" class="nav_login">LOG IN</a>
+                </nav>
+    
+                <div class="rightHeader">
+                  <div style="position: relative; display: inline-block;">
+                    <form method="GET">
+                      <input type="search" placeholder="Search Products..." id="search" style="padding: 8px; width: 150px; border: 1px solid #ccc; border-radius: 8px;">
+                        <button style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%);" onclick="search()">
+                          <i class="fa fa-search" style="font-size:16px; color: #3a4e1d;" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                  </div>
+                
+                    <button class="headerButton user">
+                        <a href="login.html">
+                            <i class="fa fa-user" style="font-size:20px"></i>
+                        </a>
+                    </button>
+    
+                    <button class="headerButton">
+                      <a href="shopping_cart.html">
+                        <i class="fa fa-shopping-cart" style="font-size:20px"></i>
+                      </a>
+                    </button>
+                </div>
+            </div>
+        </header>
+        
+<section style="margin-top: 120px;">
+
+    <!-- Flowering -->
+    <div  id="flowering" style="background-color: #ccd6be; padding: 3px;">
+        <div style="margin-left: 30px;">
+            <h1>Flowering Plant</h1>
+        </div>
+    </div>
+        <div class="product_container">
+            <div class="product">
+                <div class="prod_Image">
+                    <img src="assets/images/products/prod1_flamingo.png" alt="Flamingo Flower Image">
+                </div>
+                <div class="prod_dtl">
+                    <h3>Flamingo Lily <i>(Anthurium andraeanum)</i></h3>
+                    <p>The Flamingo Lily is a perennial evergreen plant that reaches a height of 40 cm. Its glossy, heart-shaped leaves are a deep shade of green.</p>
+                    <br/>
+                    <li>
+                        <ul><strong>Flower Color :</strong> Pink</ul>
+                        <ul><strong>Location :</strong> Indoor</ul>
+                    </li>
+                    <br/>
+                    <p class="price">RM89.90</p>
+                    <button class="add-to-cart" type="submit" onclick="addToCart('P001')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product_container">
+            <div class="product">
+                <div class="prod_Image">
+                    <img src="assets/images/products/prod2_oxalis.png" alt="Oxalis Triangularis Image">
+                </div>
+                <div class="prod_dtl">
+                    <h3>Oxalis Triangularis</h3>
+                    <p>Purple butterfly-shaped leaves that bloom during the day. It loves constantly wet soil, but be careful not to overwater it ya.</p>
+                    <br/>
+                    <li>
+                        <ul><strong>Flower Color :</strong> Purple / Lavender</ul>
+                        <ul><strong>Location :</strong> Indoor</ul>
+                        <ul><i  style="color: red;">&nbsp;&nbsp;*Warning: It may toxic to pets</i></ul>
+
+                    </li>
+                    <br/>
+                    <p class="price">RM239.90</p>
+                    <button class="add-to-cart"  onclick="addToCart('P002')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bonsai -->
+    <div  id="bonsai" style="background-color: #ccd6be; padding: 3px;">
+        <div style="margin-left: 30px;">
+            <h1>Bonsai</h1>
+        </div>
+    </div>
+
+    <div class="product_container">
+        <div class="product">
+            <div class="prod_Image">
+                <img src="assets/images/products/prod3_ficus.png" alt="Ficus Bonsai plant Image">
+            </div>
+            <div class="prod_dtl">
+                <h3>Ficus Bonsai Plant <i>(Ginseng Ficus Microcarpa)</i></h3>
+                <p style="text-align: justify;">They need well-drained soil and sunny indirect sunshine. 
+                    Overexposure to sunshine can scorch the leaves and make them fall off. 
+                    Water once a week, but never more than that. 
+                    Elephant Bush indoor plants shouldn't have feet that are always moist. 
+                    Make sure the pot drains completely, and don't let a saucer or container sit in water.</p>
+                    <br/>
+                    <li>
+                        <ul><strong>Size of Plant :</strong> Height 20cm x Diameter 35cm</ul>
+                        <ul><strong>Location :</strong> Best kept indoors</ul>
+                    </li>
+                    <br/>
+                <p class="price">RM89.00</p>
+                <button class="add-to-cart"  onclick="addToCart('P003')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="product_container">
+        <div class="product">
+            <div class="prod_Image">
+                <img src="assets/images/products/prod4_podocarpus.png" alt="Podocarpus Brevifolius Image">
+            </div>
+            <div class="prod_dtl">
+                <h3>Podocarpus Brevifolius</h3>
+                <p>This species is endemic to Borneo (Gunung Kinabalu region). It is a plant that predominantly grows in the highland tropical habitat.</p>
+                <br/>
+                    <li>
+                        <ul><strong>Size of Plant :</strong> Height 120cm x Diameter 55cm</ul>
+                        <ul><strong>Location :</strong> Outdoors</ul>
+                        <ul><strong>Grade :</strong> Premium</ul>
+                    </li>
+                <br/>
+                <p class="price">RM1688.00</p>
+                <button class="add-to-cart"  onclick="addToCart('P004')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Outdoor Plant -->
+    <div  id="outdoor" style="background-color: #ccd6be; padding: 3px;">
+        <div style="margin-left: 30px;">
+            <h1>Outdoor Plant</h1>
+        </div>
+    </div>
+
+    <div class="product_container">
+        <div class="product">
+            <div class="prod_Image">
+                <img src="assets/images/products/prod5_moneyTree.png" alt="Product 1 Image">
+            </div>
+            <div class="prod_dtl">
+                <h3>Money Tree <i>(Pachira Twist)</i></h3>
+                <p>According to Chinese feng shui tradition, the Pachira Money Tree (發財樹 Fa Cai Shu) is a fortunate plant that is widely planted as a houseplant. It represents good fortune and wealth. </p>
+                <br/>
+                <li>
+                    <ul><strong>Size of Plant :</strong> Height 200cm x Diameter 60cm</ul>
+                </li>
+            <br/>
+                <p class="price">RM129.99</p>
+                <button class="add-to-cart"  onclick="addToCart('P005')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="product_container">
+        <div class="product">
+            <div class="prod_Image">
+                <img src="assets/images/products/p2_calamansi.png" alt="Product 2 Image">
+            </div>
+            <div class="prod_dtl">
+                <h3>Calamansi <i>(Limau Kasturi or "kat-zai")</i></h3>
+                <p>This citrus tree is a lovely green decorations for your house and yields lovely white blooms. Around the age of three years, the tree begins to produce fruit.</p>
+                <br/>
+                <li>
+                    <ul><strong style="color:rgb(93, 93, 182);">Estimated Stock Arrival :</strong> Jan 2024, before Chinese New Year.</ul>
+                </li>
+                <br/>
+                <p class="price">RM88.80</p>
+                <button class="add-to-cart" disabled style="background-color: gray;"  onclick="addToCart('P006')">Out of Stock</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bonquet Collection-->
+    <div  id="bouquet" style="background-color: #ccd6be; padding: 3px;">
+        <div style="margin-left: 30px;">
+            <h1>Bouquet Collection</h1>
+        </div>
+    </div>
+
+    <div class="product_container">
+        <div class="product">
+            <div class="prod_Image">
+                <img src="assets/images/products/prod7_sereneLily.png" alt="Serene Lily Image">
+            </div>
+            <div class="prod_dtl">
+                <h3>Serene Lily Bouquet</h3>
+                <p style="text-align: justify;">Tranquility and serenity are highly valued qualities in nature. 
+                    This bouquet is named after the white crest lily and has ginger blossoms and a variety of tropical greenery. 
+                    It is pre-arranged and has the option of include a glass vase. With fresh water and regular trimming, 
+                    it may live for up to three weeks.</p>
+                <br/>
+                    <li>
+                        <ul><strong style="color:rgb(93, 93, 182);">Pre-Order:</strong> Minimum of 3 days</ul>
+                    </li>
+                <br/>
+                <p class="price">RM59.00</p>
+                <button class="add-to-cart"  onclick="addToCart('P007')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="product_container">
+        <div class="product">
+            <div class="prod_Image">
+                <img src="assets/images/products/prod8_bouquet.png" alt="Graduate Sunflower Image">
+            </div>
+            <div class="prod_dtl">
+                <h3>Graduate Sunflower Bouquet</h3>
+                <p style="text-align: justify;">The golden petals of the sunflowers represent prosperity, progress, and the bright way ahead for the graduate. 
+                    Pink roses provide tenderness and devotion, while orange spray roses lend vigor and enthusiasm to the arrangement. 
+                    <br/><br/>
+                    The inclusion of the graduating bear is a touching touch that symbolizes the scholar's journey and accomplishments. 
+                    It's a lovely companion to follow the graduate as they enter the next stage of their lives.</p>
+                <br/>
+                <li>
+                    <ul><strong style="color:rgb(93, 93, 182);">Pre-Order:</strong> Minimum of one weeks</ul>
+                </li>
+            <br/>
+                <p class="price">RM218.00</p>
+                <button class="add-to-cart"  onclick="addToCart('P008')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pot Series -->
+    <div  id="pot" style="background-color: #ccd6be; padding: 3px;">
+        <div style="margin-left: 30px;">
+            <h1>Pot Series</h1>
+        </div>
+    </div>
+
+    <div class="product_container">
+        <div class="product">
+            <div class="prod_Image">
+                <img src="assets/images/products/p1_monstera.png" alt="Product 1 Image">
+            </div>
+            <div class="prod_dtl">
+                <h3>Monstera Deliciosa</h3>
+                <p>Monsteras are simple to care for and grow quickly in the correct setting, so give it some room to stretch out, make a statement, and prosper! The Monstera's leaves will develop long ribbons and holes, mimicking swiss cheese, giving it a unique, graphic look as it matures.</p>
+                <br/>
+                <p class="price">RM99.00</p>
+                <button class="add-to-cart"  onclick="addToCart('P009')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="product_container">
+        <div class="product">
+            <div class="prod_Image">
+                <img src="assets/images/products/prod9_triPot.png" alt="Product 2 Image">
+            </div>
+            <div class="prod_dtl">
+                <h3>Trio Set Pot</h3>
+                <p>This collection includes three Aglaonemas in various colors and patterns: Aurora, Anjamani, and Super White. 
+                    With their colorful colors and easygoing temperament, these trio will undoubtedly brighten your day.
+                <br/><br/>
+                    These adaptable houseplants grow well inside and are a great present for any occasion.</p>
+                <br/>
+                <p class="price">RM109.00</p>
+                <button class="add-to-cart"  onclick="addToCart('P010')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+</section>
+    
+    </body>
+
+    <footer style="background-image: url('./assets/images/footer.gif')">
+        <div class="footer_box section">
+            <div class="container">
+                <div>
+                    <a href="#" class="logo">Bloom&Co.</a>
+                    <p class="footer-text" style="margin-block-end: 22px; color: rgba(71, 66, 66, 0.856);;">If you have any enquiry, please find us at <a href="mailto:support@bloom.com" style="color: slateblue; font-weight: bold;">support@bloom.com</a></p>
+                    <ul>
+                        <li class="contact">
+                            <i class="fa fa-map-marker" style="font-size:26px; color: #505e3c;"></i>
+                            <address style="color: rgba(71, 66, 66, 0.856);">
+                                1, Jalan Puteri 1/1 Bandar Puteri 47100 Puchong Selangor.
+                            </address>
+                        </li>
+
+                        <li class="contact">
+                            <i class="fa fa-phone" style="font-size:26px; color: #505e3c;"></i>
+
+                            <a href="tel:+6010010100" style="color: rgba(71, 66, 66, 0.856);">(+60)-10 010 0100</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul>
+                    <li><p class="footer_title">About</p></li>
+                    <li style="text-align: justify; color: #193b44;">
+                        Founded in 2023,
+                        Bloom&Co. takes pride in curating the finest blooms
+                        and greenery worldwide. <b>"Where every leaf tells a story, 
+                        and every plant inspires a moment of natural beauty."</b>
+                    </li>
+                </ul>
+
+                <ul style="color: #3b4232;">
+                    <li><p class="footer_title">Menu</p></li>
+                    <li><a href="contact_us.html" class="footer_href">Contact Us</a></li>
+                    <li><a href="login.html" class="footer_href">Login</a></li>
+                    <li><a href="register.html" class="footer_href">Register</a></li>
+                    <li><a href="about.html" class="footer_href">About</a></li>
+                    <li><a href="shop.html" class="footer_href">Shop</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div style="padding-block: 2px;">
+            <div class="container">
+                <p style="text-align: center;">&copy; 2023 Bloom&Co.  <i><sub style="color: rgb(36, 158, 189);">by RayXiang</sub></i></p>
+                <p class="dates">Version: 20231201B | Created on: 20 November 2023 | Last Updated on: 10 December 2023 | Data Collection Date: 30 November 2023</p>
+            </div>
+        </div>
+    </footer>
+
+</html>
+
+<!-- javascripts -->
+<script src="./assets/javascripts/navigation.js" defer></script>
+<script src="./assets/javascripts/cart.js"></script>

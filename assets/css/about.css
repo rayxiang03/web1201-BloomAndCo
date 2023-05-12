@@ -1,0 +1,38 @@
+.about_title{
+    margin-left: 140px;
+    margin-top: 120px;
+    text-decoration: underline;
+}
+
+.about_main {
+    font-family: 'AlbertSans';
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.about_main div{
+    margin-bottom: 30px;
+}
+
+.about_main h2 {
+    color: #039778;
+}
+
+.about_main li{
+    list-style:circle !important;
+    list-style-position: inside !important;
+}
+
+.about_main img {
+    max-width: 25%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.picture_la {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 10px;
+}

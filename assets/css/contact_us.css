@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+#macam_mana{
+    font-size: xx-large;
+    padding-bottom: 20px;
+    
+}
+
+.invalidMsg_Class{
+    color: red;
+    font-family: 'AlbertSans';
+    font-size: small;
+    padding-left: 10px;
+}
+
+li{
+    text-align: justify;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    background-color: #fcf9f3;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 120px;
+    font-family: 'AlbertSans';
+    color: #224229;
+}
+
+.contactform label {
+    display: block;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.right_side {
+    flex: 2;
+    margin-left: 30px;
+}
+
+.left_side {
+    flex:1;
+    margin-bottom: 20px;
+    background-color: #095a550e;
+    padding: 20px;
+}
+
+.small {
+    font-size: 30px;
+    text-transform: capitalize;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.subpart{
+    margin-bottom: 60px;
+}
+
+input, textarea{
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    outline: none;
+    width: 90%;
+    background: #f5f8fa;
+    border: 1px solid #cbd6e2;
+
+}
+
+.selection select {
+    width: 90%;
+    padding: 6px;
+    border: 1px solid #cbd6e2;
+    border-radius: 6px;
+    background: #f5f8fa;
+}
+
+#order{
+    margin-top: 6px;
+}
+
+.contactform input[type="submit"] {
+    background-color: #224229;
+    color: #F8F2E7;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 30px; 
+}
+
+.contactform input[type="submit"]:hover {
+    background-color: #115813;
+}
+
+/* ViewPort */
+@media (min-width: 768px) {
+    .row {
+        flex-direction: row;
+    }
+
+    .left_side {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}
