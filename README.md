@@ -19,6 +19,24 @@ Inspired by the lack of plant-focused online platforms in Malaysia, Bloom&Co. ai
 
 ---
 
+## 📸 Screenshots of Website Pages
+
+Here are some screenshots of the core pages of the website:
+
+1. **Homepage**  
+   ![Homepage](https://github.com/rayxiang03/web1201-BloomAndCo/blob/master/screenshoots/Bloom_HomePage.jpg)
+
+2. **Login Page**  
+   ![Login Page](https://github.com/rayxiang03/web1201-BloomAndCo/blob/master/screenshoots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-12-01%20005803.png)
+
+3. **User Profile Page**  
+   ![User Profile](https://github.com/rayxiang03/web1201-BloomAndCo/blob/master/screenshoots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-12-01%20014827.png)
+
+4. **Product Listing Page**  
+   ![Product Listing](https://github.com/rayxiang03/web1201-BloomAndCo/blob/master/screenshoots/image.png)
+
+---
+
 ## 🎯 Aims and Objectives
 
 - 📦 **Filling a Market Gap**: Serve as a trusted and inclusive online source for plant purchases in Malaysia.
